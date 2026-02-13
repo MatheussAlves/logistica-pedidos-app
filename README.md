@@ -17,3 +17,11 @@ Em um projeto real de maior escala, poderia considerar:
 - CSS Modules
 - SCSS
 - Tailwind
+
+
+# Features futuras
+
+## Linkar com projeto de comunicação de microsserviços 
+- Adicionar autenticação via JWT Token
+- Linkar com api de produtos e pedidos (comunicação assincrona)
+### Para essa feature seria necessário mudar a lógica do Front e algumas outras coisas.
