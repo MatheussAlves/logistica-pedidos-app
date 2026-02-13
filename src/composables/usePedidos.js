@@ -3,7 +3,7 @@ import { mockPedidos } from "../data/mockPedidos";
 import { STATUS_PEDIDOS } from "../constants/statusPedidos";
 
 export function usePedidos() {
-  const pedidos = ref([...mockPedidos]);
+  const pedidos = ref([...mockPedidos]); //cria copia do array 
 
   const filtroNome = ref("");
   const filtroStatus = ref(null);

@@ -33,10 +33,12 @@ const {
         </option>
       </select>
     </div>
-
+    <p>
+      Total: {{ pedidosFiltrados.length }} pedidos
+    </p>
     <PedidosTable
       :pedidos="pedidosFiltrados"
-      :onEnviar="marcarComoEnviado"
+      @enviarPedido="marcarComoEnviado"
       :statusConst="STATUS_PEDIDOS"
     />
   </div>
