@@ -5,9 +5,11 @@ import { STATUS_PEDIDOS } from "../constants/statusPedidos";
 export function usePedidos() {
   const pedidos = ref([...mockPedidos]); //cria copia do array 
 
+  //usei refs para os filtros de nome e status, pois eles são reativos e permitem que a interface se atualize automaticamente quando os valores mudarem.
   const filtroNome = ref("");
   const filtroStatus = ref(null);
 
+  // Computed para filtrar os pedidos com base nos filtros de nome e status, pois ele é reativo e só recalcula quando os filtros ou os pedidos mudarem.
   const pedidosFiltrados = computed(() => {
     return pedidos.value.filter(pedido => {
       return (
