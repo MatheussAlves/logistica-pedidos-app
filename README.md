@@ -1,5 +1,19 @@
-# Vue 3 + Vite
+# Decisões Técnicas
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## CSS
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Optei por utilizar CSS puro para:
+
+- Evitar dependências externas (bibliotecas de UI)
+- Manter foco na lógica e organização do código
+
+Os estilos foram centralizados em `assets/main.css` para:
+
+- Separar responsabilidade de layout da lógica
+- Manter os componentes mais limpos
+- Facilitar manutenção futura
+
+Em um projeto real de maior escala, poderia considerar:
+- CSS Modules
+- SCSS
+- Tailwind
